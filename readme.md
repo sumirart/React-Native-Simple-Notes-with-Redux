@@ -1,8 +1,8 @@
 # React Native Simple Notes with Redux
 
-This is part of my progress while learning React Native, and one of a task while doing Bootcamp in Arkademy.
+*This is part of my progress while learning React Native, and one of a task while doing Bootcamp in Arkademy.*
 
-Features and notes about the app:
+**Features and notes about the app:**
 - Add note
 - Automatically save/update note when the back key (both in-app and phone) is pressed
 - Update note and autofocus when updating existing note
@@ -17,7 +17,7 @@ Features and notes about the app:
 - If there is no more than 1 line, sub-title will be 'no additional text"
 
 
-Known Issues:
+**Known Issues:**
 - Unable to delete when in grid mode
 - Row(s) not collapsed when the "Edit" button is pressed
 - Sometimes the note is added two times when back key is pressed two times very fast
