@@ -5,9 +5,10 @@ This is part of my progress while learning React Native, and one of a task while
 Features and notes about the app:
 - Add note
 - Automatically save/update note when the back key (both in-app and phone) is pressed
-- Edit note
+- Update note and autofocus when updating existing note
 - Delete single note by drag to left
 - Delete few notes or all notes by pressing the "Edit" button
+- "Edit" button is disabled when there is no note
 - Confirmation on delete
 - Switch view to list and grid mode
 - Date automatically set to the time when you create or edit the note
@@ -21,9 +22,9 @@ Known Issues:
 - Row(s) not collapsed when the "Edit" button is pressed
 - Sometimes the note is added two times when back key is pressed two times very fast
 - If there is line but an empty line (like space or enter) in line 2, sub-title will be blank
-- **Note(s) will be deleted if the app is closed**
+- (FIXED) **Note(s) will be deleted if the app is closed**
 
 Todo:
-- Add Redux Logger and Redux Persist
+- (Done) Add Redux Logger and Redux Persist
 - Add gif/screenshot for documentation
 - Add video for documentation (Indonesian / Bahasa language)
