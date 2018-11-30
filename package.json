@@ -17,6 +17,8 @@
     "react-navigation-backhandler": "^1.2.0",
     "react-redux": "^5.1.1",
     "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^5.10.0",
     "uuid": "^3.3.2"
   },
   "devDependencies": {

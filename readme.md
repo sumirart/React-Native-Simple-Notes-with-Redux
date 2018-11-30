@@ -22,3 +22,8 @@ Known Issues:
 - Sometimes the note is added two times when back key is pressed two times very fast
 - If there is line but an empty line (like space or enter) in line 2, sub-title will be blank
 - **Note(s) will be deleted if the app is closed**
+
+Todo:
+- Add Redux Logger and Redux Persist
+- Add gif/screenshot for documentation
+- Add video for documentation (Indonesian / Bahasa language)
