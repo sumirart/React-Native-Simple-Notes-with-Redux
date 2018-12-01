@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View } from "react-native";
-import { Body, ListItem, Text, CheckBox, Left } from 'native-base';
+import { Body, ListItem, Text, CheckBox } from 'native-base';
 import { withNavigation } from 'react-navigation';
 
 class ListComponent extends Component {

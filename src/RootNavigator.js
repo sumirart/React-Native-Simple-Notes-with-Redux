@@ -1,11 +1,4 @@
-import React, { Component } from "react";
-import {
-    View,
-    Text,
-    StyleSheet
-} from "react-native";
 import { createStackNavigator, createAppContainer } from 'react-navigation';
-
 
 // IMPORT SCREEN
 import HomeScreen from './containers/HomeScreen';

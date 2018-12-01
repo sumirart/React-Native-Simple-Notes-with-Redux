@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { ListView, Alert } from 'react-native';
-import { Container, Content, Button, Icon, List, Header, Title, Left, Body, Right, Text, Footer, FooterTab, View, CardItem } from 'native-base';
+import { Container, Content, Button, Icon, List, Header, Title, Left, Body, Right, Text, Footer, FooterTab, CardItem } from 'native-base';
 import { Col, Row, Grid } from 'react-native-easy-grid'
 import { withNavigation } from 'react-navigation';
 
 // IMPORT COMPONENT
 import ListComponent from './ListComponent';
-import GridComponent from './GridComponent';
 
 
 class Note extends Component {
