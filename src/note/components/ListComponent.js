@@ -67,7 +67,9 @@ class ListComponent extends Component {
     render() {
         // if (!this.props.toggle) {
         //     this.setState({ checked: !this.state.checked })
-        // }
+        // // }
+        // console.log("LIST COMPONENT")
+        // console.log(this.props);
 
         return (
             <ListItem key={this.props.note.id} onPress={() => {

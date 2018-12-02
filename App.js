@@ -1,24 +1,26 @@
-import React, { Component } from 'react';
-import { View, ActivityIndicator } from 'react-native';
-import { Provider } from 'react-redux';
+import React from 'react';
+import { Provider, connect } from 'react-redux';
+import { reduxifyNavigator } from 'react-navigation-redux-helpers'
 import { PersistGate } from 'redux-persist/integration/react'
 
 
-import { store, persistor } from './src/store';
-import RootNavigator from './src/RootNavigator';
+import { store, persistor } from './src/public/redux/store';
+import RootNavigator from './src/public/navigators/RootNavigator';
 
-export default class App extends Component {
-  renderLoading = () => (
-    <View style={{ flex: 1, backgroundColor: "#fff", alignItems: "center", justifyContent: "center" }}>
-      <ActivityIndicator size="large" />
-    </View>
-  )
+const App = reduxifyNavigator(RootNavigator, "root");
 
+const mapStateToProps = state => ({
+  state: state.router
+});
+
+const AppWithNavigationState = connect(mapStateToProps)(App);
+
+export default class Root extends React.Component {
   render() {
     return (
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
-          <RootNavigator />
+          <AppWithNavigationState />
         </PersistGate>
       </Provider>
     );

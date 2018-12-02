@@ -1,17 +1,16 @@
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 // IMPORT SCREEN
-import HomeScreen from './containers/HomeScreen';
-import AddNoteScreen from './containers/AddNoteScreen';
-import Notes from './Notes';
-import EditNoteScreen from "./containers/EditNoteScreen";
+import HomeScreen from '../../note/screens/HomeScreen';
+import AddNoteScreen from '../../note/screens/AddNoteScreen';
+import EditNoteScreen from "../../note/screens/EditNoteScreen";
 
 const AppNavigator = createStackNavigator({
-    Notes: Notes,
     Home: HomeScreen,
     AddNote: AddNoteScreen,
     EditNote: EditNoteScreen
 }, {
+        // headerMode: "none"
         defaultNavigationOptions: {
             title: "Notes",
         }

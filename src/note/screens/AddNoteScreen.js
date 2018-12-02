@@ -7,7 +7,7 @@ import { AndroidBackHandler } from 'react-navigation-backhandler'; // handle bac
 import { connect } from 'react-redux';
 
 // IMPORT ACTIONS
-import { addNotes } from '../actions';
+import { addNotes } from '../../public/redux/actions/note';
 
 // MAP DISPATCH TO PROPS
 const mapDispatchToProps = dispatch => {

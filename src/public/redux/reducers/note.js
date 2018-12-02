@@ -1,4 +1,4 @@
-import { ADD_NOTE, EDIT_NOTE, REMOVE_NOTE, TOGGLE_GRID } from '../constants/actionTypes';
+import { ADD_NOTE, EDIT_NOTE, REMOVE_NOTE, TOGGLE_GRID } from '../../../constants/actionTypes';
 
 const initialState = {
     notes: [],
